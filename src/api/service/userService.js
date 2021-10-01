@@ -32,6 +32,7 @@ const editProfileAdm = async ({
     fullName, birthDate, email, password, role, country,
   }, { where: { id } });
   const user = await User.findOne({ where: { id } });
+  console.log(user);
   return user;
 };
 const deleteProfile = async (id) => {

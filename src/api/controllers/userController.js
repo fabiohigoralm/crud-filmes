@@ -36,7 +36,7 @@ const deleteUser = rescue(async (req, res) => {
 });
 const deleteAdmUser = rescue(async (req, res) => {
   const { role } = req.user;
-  if (role !== 'user') throw boom.forbidden('Without permission');
+  if (role !== 'admin') throw boom.forbidden('Without permission');
   const { id } = req.params;
   await deleteProfile(id);
   res.status(200).json({ message: 'Deleted' });

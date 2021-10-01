@@ -1,0 +1,4932 @@
+{
+	"id": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+	"name": "Api Filmes",
+	"description": "Api de filmes elaborada para teste tecnico da Ioasys,\napi conta com validação por token ,usa banco de dados relacional e utiliza -se o joi para as validações de campos.",
+	"order": [],
+	"folders": [
+		{
+			"name": "Adicionar / remover / listarfilmes dos favoritos",
+			"description": "User pode adicionar e remover e listar os filmes da sua tabela de favoritos",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"order": [
+				"4ba94ac4-c95b-a3ba-d578-fe13d5863a86",
+				"98e85c24-56ca-384a-eb38-c50e1fbaacf5",
+				"25e17e84-6a9c-9f9b-0bb6-cb8b4805be14",
+				"41c33910-066b-3dd6-a6e2-b2162d147d40"
+			],
+			"owner": "15991201",
+			"folders_order": [],
+			"id": "ec9d2b8a-e243-7ec1-4a05-abc34e5737b0"
+		},
+		{
+			"name": "Adicionar /remover/editar  filmes Admin",
+			"description": "Admin tem permissão de adicionar novos filmes,deleter e editar qualquer filme.",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"order": [
+				"ad16b588-60ba-83f0-75e7-e5df1fe8d986",
+				"20b2dc31-38cc-984f-c34f-3e5471c87752",
+				"715c11d8-054d-e224-1d45-b0f1b9555a48"
+			],
+			"owner": "15991201",
+			"folders_order": [],
+			"id": "ec06e6e4-dbd4-b858-9ead-28464ad2373c"
+		},
+		{
+			"name": "Listar e editar Usuarios",
+			"description": "Usuario pode ver e editar seu perfil",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"order": [
+				"dd499c93-5b13-c72a-633b-739211f1cee4",
+				"9ff0f641-6e72-efe1-96a0-07eedc6ee749",
+				"ff4d46ba-21ef-d073-e76e-507f184c2c55"
+			],
+			"owner": "15991201",
+			"folders_order": [],
+			"id": "c3c17f07-d73c-12c1-7659-7527d2b66ff6"
+		},
+		{
+			"name": "Listar filmes",
+			"description": "Rotas para admins e usuarios listar e procuras todos os filmes .Pode se listar todos os filmes os pelo id.",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"order": [
+				"18160b82-0185-4270-2423-6a5f28101285",
+				"11a633a9-f971-d7ca-73e0-1bc145584f2d"
+			],
+			"owner": "15991201",
+			"folders_order": [],
+			"id": "c05165c9-8f91-3cf6-a9ea-0d7f40ef238a"
+		},
+		{
+			"name": "Login para Usuarios",
+			"description": "login para todos admins e usuarios \nDeve requisição deve conter os campos email e password.\nCaso login efetuado com sucesso ,retorna um token. ",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"order": [
+				"6e327151-27b1-cac5-7443-664e93833486",
+				"0a8105be-ed65-1c48-3a33-bd8ed748f5c1"
+			],
+			"owner": "15991201",
+			"folders_order": [],
+			"id": "8f087355-76f5-d5ef-125d-6a6ed0d5d74d"
+		},
+		{
+			"name": "listar editar remover Admin",
+			"description": "Admin pode listar e remover e editar qualquer usuario,taambem transformando usuario em admin",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"order": [
+				"61b9a07e-8453-b2d9-f6fd-e23ebdbae36e",
+				"98d4c40a-9df4-9881-47ef-497eb4f2fb21",
+				"cafe3028-97cc-b8f9-6e55-b9e685dce9ce"
+			],
+			"owner": "15991201",
+			"folders_order": [],
+			"id": "770dca52-004a-03d5-ee23-32d883eafc4e"
+		}
+	],
+	"folders_order": [
+		"8f087355-76f5-d5ef-125d-6a6ed0d5d74d",
+		"c05165c9-8f91-3cf6-a9ea-0d7f40ef238a",
+		"ec9d2b8a-e243-7ec1-4a05-abc34e5737b0",
+		"ec06e6e4-dbd4-b858-9ead-28464ad2373c",
+		"c3c17f07-d73c-12c1-7659-7527d2b66ff6",
+		"770dca52-004a-03d5-ee23-32d883eafc4e"
+	],
+	"timestamp": 1632874956561,
+	"owner": "15991201",
+	"public": false,
+	"requests": [
+		{
+			"id": "0a8105be-ed65-1c48-3a33-bd8ed748f5c1",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/signin",
+			"folder": "8f087355-76f5-d5ef-125d-6a6ed0d5d74d",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633078912259,
+			"name": "login user",
+			"description": "Rota de login para todos usuarios cadastrados",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": 141,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "227",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:16:05 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"e3-VKIG3KPWCmDtHEUsnDhK3pTH0rk\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\"",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "login user",
+					"id": "d826f8cc-3459-38f9-bbb9-bca9ed5a0f5f",
+					"isSample": true,
+					"scrollToResult": false,
+					"runTests": false,
+					"request": {
+						"url": "http://localhost:3001/signin",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\"email\":\"pedro.barros@gmail.com\",\n\t\"password\":\"skate\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": "{\"email\":\"pedro.barros@gmail.com\",\n\t\"password\":\"skate\"\n}"
+		},
+		{
+			"id": "11a633a9-f971-d7ca-73e0-1bc145584f2d",
+			"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/movies/2",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"data": null,
+			"dataMode": "params",
+			"name": "listas filmes user por id",
+			"description": "Usuario pode listar filmes por id",
+			"descriptionFormat": "html",
+			"time": 1633080685885,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 269,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "186",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:31:30 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"ba-I7mSnIXDVdgz2KpGqbOMMVNC9gg\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":2,\"title\":\"Volta dos que...\",\"subtitle\":\"volta dos q\",\"storyline\":\"turn\",\"rating\":10,\"genre\":\"genre2\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "listas filmes user por id",
+					"id": "f7022e00-b12c-5928-dd53-958041824bf5",
+					"request": {
+						"url": "http://localhost:3001/movies/2",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "c05165c9-8f91-3cf6-a9ea-0d7f40ef238a"
+		},
+		{
+			"id": "18160b82-0185-4270-2423-6a5f28101285",
+			"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/movies",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"data": null,
+			"dataMode": "params",
+			"name": "listar filmes user ",
+			"description": "Usuarios pode listar todos os filmes ",
+			"descriptionFormat": "html",
+			"time": 1633080375364,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 283,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "736",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:25:44 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"2e0-JLXzF27tkKDL6Fl9WO0s7nffnIk\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"id\":1,\"title\":\"Titanic\",\"subtitle\":\"Titanic\",\"storyline\":\"sheep =)\",\"rating\":10,\"genre\":\"genre1\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":2,\"title\":\"Volta dos que...\",\"subtitle\":\"volta dos q\",\"storyline\":\"turn\",\"rating\":10,\"genre\":\"genre2\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":3,\"title\":\"Agua Molhada\",\"subtitle\":\"chuva no gelo\",\"storyline\":\"water and ice\",\"rating\":8,\"genre\":\"genre3\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":6,\"title\":\"TQTQTQ\",\"subtitle\":\"Titanic\",\"storyline\":\"sheep =)\",\"rating\":10,\"genre\":\"genre2\",\"createdAt\":\"2021-10-01T06:31:09.000Z\",\"updatedAt\":\"2021-10-01T06:31:09.000Z\"}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "listar filmes user",
+					"id": "b2f9bbe8-88b0-4757-373e-881769763752",
+					"request": {
+						"url": "http://localhost:3001/movies",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "c05165c9-8f91-3cf6-a9ea-0d7f40ef238a"
+		},
+		{
+			"id": "20b2dc31-38cc-984f-c34f-3e5471c87752",
+			"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/movies/3",
+			"folder": "ec06e6e4-dbd4-b858-9ead-28464ad2373c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633082187478,
+			"name": "editar filme",
+			"description": "Admin pode editar filme ",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 153,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "82",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:37:19 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"52-XoRAE/gkIQx6V80dIQTmVm+3HxE\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"user_id\":4,\"movie_id\":1},{\"user_id\":4,\"movie_id\":2},{\"user_id\":4,\"movie_id\":3}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "adicionar filmes favoritos",
+					"id": "a4ab9e1f-48a6-04ab-9217-8b8e1a94a9e0",
+					"request": "20b2dc31-38cc-984f-c34f-3e5471c87752",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/myfavorites/3",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 321,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "27",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:41:59 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"1b-c+63+ZqJc72DHh+6v1aqfDJukao\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"message\":\"Movie deleted\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "remover filmes favoritos",
+					"id": "c0ca843b-8542-610f-ab33-7e0fe503e14f",
+					"request": "20b2dc31-38cc-984f-c34f-3e5471c87752",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/myfavorites/2",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "",
+						"method": "DELETE",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 856,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "308",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:49:25 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"134-0Efyeg4JLPyGjFcezHkDvqB6ArM\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":8,\"title\":\"Liga da Justiça\",\"subtitle\":\"Spirits Within\",\"storyline\":\"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\"rating\":4,\"genre\":\"'fantasy'\",\"updatedAt\":\"2021-10-01T09:49:24.446Z\",\"createdAt\":\"2021-10-01T09:49:24.446Z\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "adicionar filme admin",
+					"id": "53fad414-4169-78b8-11a8-8aef5bf309ee",
+					"request": "20b2dc31-38cc-984f-c34f-3e5471c87752",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\nContent-Type: application/json\n",
+						"data": "{\n      \"title\": \"Liga da Justiça\",\n      \"subtitle\": \"Spirits Within\",\n      \"storyline\": \"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\n      \"rating\": 4,\n      \"genre\": \"'fantasy'\"\n    }",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 404,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "303",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:52:47 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"12f-D/QBayrbahyAW0L3HdrrKvqtRug\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":3,\"title\":\"Monstros SA\",\"subtitle\":\"Spirits Within\",\"storyline\":\"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\"rating\":4,\"genre\":\"'fantasy'\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T09:52:47.000Z\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "editar filme",
+					"id": "33480c2b-04a8-7f36-9f5e-3beaaf3c61aa",
+					"request": {
+						"url": "http://localhost:3001/movies/3",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\nContent-Type: application/json\n",
+						"data": "{\n      \"title\": \"Monstros SA\",\n      \"subtitle\": \"Spirits Within\",\n      \"storyline\": \"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\n      \"rating\": 4,\n      \"genre\": \"'fantasy'\"\n    }",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": ""
+		},
+		{
+			"id": "25e17e84-6a9c-9f9b-0bb6-cb8b4805be14",
+			"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/movies/favorites",
+			"folder": "ec9d2b8a-e243-7ec1-4a05-abc34e5737b0",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633082301766,
+			"name": "listar favoritos de todos usuarios",
+			"description": "Admin pode editar filme ",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 153,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "82",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:37:19 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"52-XoRAE/gkIQx6V80dIQTmVm+3HxE\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"user_id\":4,\"movie_id\":1},{\"user_id\":4,\"movie_id\":2},{\"user_id\":4,\"movie_id\":3}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "adicionar filmes favoritos",
+					"id": "03a02baf-36d4-9d46-a192-c21087b55212",
+					"request": "25e17e84-6a9c-9f9b-0bb6-cb8b4805be14",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/myfavorites/3",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 321,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "27",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:41:59 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"1b-c+63+ZqJc72DHh+6v1aqfDJukao\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"message\":\"Movie deleted\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "remover filmes favoritos",
+					"id": "7e0beda6-8520-da1f-04e1-2aa0a8b68388",
+					"request": "25e17e84-6a9c-9f9b-0bb6-cb8b4805be14",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/myfavorites/2",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "",
+						"method": "DELETE",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 856,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "308",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:49:25 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"134-0Efyeg4JLPyGjFcezHkDvqB6ArM\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":8,\"title\":\"Liga da Justiça\",\"subtitle\":\"Spirits Within\",\"storyline\":\"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\"rating\":4,\"genre\":\"'fantasy'\",\"updatedAt\":\"2021-10-01T09:49:24.446Z\",\"createdAt\":\"2021-10-01T09:49:24.446Z\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "adicionar filme admin",
+					"id": "acdf87e1-1bdf-e60f-5a90-43541dc32d31",
+					"request": "25e17e84-6a9c-9f9b-0bb6-cb8b4805be14",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\nContent-Type: application/json\n",
+						"data": "{\n      \"title\": \"Liga da Justiça\",\n      \"subtitle\": \"Spirits Within\",\n      \"storyline\": \"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\n      \"rating\": 4,\n      \"genre\": \"'fantasy'\"\n    }",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 404,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "303",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:52:47 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"12f-D/QBayrbahyAW0L3HdrrKvqtRug\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":3,\"title\":\"Monstros SA\",\"subtitle\":\"Spirits Within\",\"storyline\":\"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\"rating\":4,\"genre\":\"'fantasy'\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T09:52:47.000Z\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "editar filme",
+					"id": "1c155ee3-1ebe-7421-a88c-7714b82b88fd",
+					"request": "25e17e84-6a9c-9f9b-0bb6-cb8b4805be14",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/3",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\nContent-Type: application/json\n",
+						"data": "{\n      \"title\": \"Monstros SA\",\n      \"subtitle\": \"Spirits Within\",\n      \"storyline\": \"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\n      \"rating\": 4,\n      \"genre\": \"'fantasy'\"\n    }",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 511,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "136",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:57:47 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"88-vsWO/Nw33REfInzsK66Q5+KGLv0\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"user_id\":2,\"movie_id\":1},{\"user_id\":3,\"movie_id\":1},{\"user_id\":4,\"movie_id\":1},{\"user_id\":2,\"movie_id\":2},{\"user_id\":4,\"movie_id\":3}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "lista favoritos de todos usuarios",
+					"id": "e923f7b4-2567-18df-b256-1844bccc58ae",
+					"request": {
+						"url": "http://localhost:3001/movies/favorites",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk",
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\nContent-Type: application/json\n",
+						"data": "",
+						"method": "GET",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"folderId": "ec9d2b8a-e243-7ec1-4a05-abc34e5737b0",
+			"rawModeData": ""
+		},
+		{
+			"id": "41c33910-066b-3dd6-a6e2-b2162d147d40",
+			"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/movies/myfavorites/2",
+			"folder": "ec9d2b8a-e243-7ec1-4a05-abc34e5737b0",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633082162659,
+			"name": "remover filmes favoritos",
+			"description": "User pode adicionar filme aos favoritos",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 153,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "82",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:37:19 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"52-XoRAE/gkIQx6V80dIQTmVm+3HxE\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"user_id\":4,\"movie_id\":1},{\"user_id\":4,\"movie_id\":2},{\"user_id\":4,\"movie_id\":3}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "adicionar filmes favoritos",
+					"id": "dc7d3747-2c8a-d413-8946-7154e1689411",
+					"request": "41c33910-066b-3dd6-a6e2-b2162d147d40",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/myfavorites/3",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 321,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "27",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:41:59 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"1b-c+63+ZqJc72DHh+6v1aqfDJukao\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"message\":\"Movie deleted\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "remover filmes favoritos",
+					"id": "279dea2e-fabb-c172-42f9-bd7fdaef91ed",
+					"request": {
+						"url": "http://localhost:3001/movies/myfavorites/2",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "",
+						"method": "DELETE",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": ""
+		},
+		{
+			"id": "4ba94ac4-c95b-a3ba-d578-fe13d5863a86",
+			"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/movies/myfavorites/3",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633082167871,
+			"name": "adicionar filmes favoritos",
+			"description": "User pode adicionar filme aos favoritos",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 153,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "82",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:37:19 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"52-XoRAE/gkIQx6V80dIQTmVm+3HxE\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"user_id\":4,\"movie_id\":1},{\"user_id\":4,\"movie_id\":2},{\"user_id\":4,\"movie_id\":3}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "adicionar filmes favoritos",
+					"id": "33320026-9f21-6f04-0d41-36dc8ca0c9e3",
+					"request": {
+						"url": "http://localhost:3001/movies/myfavorites/3",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			]
+		},
+		{
+			"id": "61b9a07e-8453-b2d9-f6fd-e23ebdbae36e",
+			"headers": "Content-Type: application/json\nAuthorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/user/",
+			"folder": "8f087355-76f5-d5ef-125d-6a6ed0d5d74d",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633083256395,
+			"name": "listar todos usuarios",
+			"description": "admin pode listar todos usuarios",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": 188,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "221",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 08:57:39 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"dd-vncxxqBLaEgFF6Tpmq0LqY7qF2I\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3ODY1OSwiZXhwIjoxNjMzMTY1MDU5fQ.--npsc-eacZOGWsCL1FYXKVqtzbgfdSyxBoJ5ihkt4I\"",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Login com Administrador com sucesso",
+					"id": "cdd72ac6-fcec-8cb4-7744-5bde857f9e47",
+					"isSample": true,
+					"scrollToResult": false,
+					"runTests": false,
+					"request": "61b9a07e-8453-b2d9-f6fd-e23ebdbae36e",
+					"requestObject": {
+						"url": "http://localhost:3001/signin",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": 72,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "221",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:15:27 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"dd-mFWyBP8FhpXLDtUJJuxN8LY9SHM\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\"",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Login admin",
+					"id": "4a39e120-2a39-f858-3079-d0d49af41084",
+					"isSample": true,
+					"scrollToResult": false,
+					"runTests": false,
+					"request": "61b9a07e-8453-b2d9-f6fd-e23ebdbae36e",
+					"requestObject": {
+						"url": "http://localhost:3001/signin",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 461,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "718",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 10:13:53 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"2ce-9GUjaBcTXNw8Mi4QlgH/b1+Fv3s\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"id\":1,\"fullName\":\"admin\",\"birthDate\":\"1980-06-15T09:34:21.000Z\",\"email\":\"admin@com.br\",\"password\":\"123456789\",\"country\":\"Brasil\",\"role\":\"admin\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":2,\"fullName\":\"Lewis Hamilton\",\"birthDate\":\"1980-06-15T09:34:21.000Z\",\"email\":\"lewishamilton@gmail.com\",\"password\":\"rubinhoamigo\",\"country\":\"Inglaterra\",\"role\":\"user\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":3,\"fullName\":\"Luciano Hulk\",\"birthDate\":\"1990-06-15T09:34:21.000Z\",\"email\":\"hulk.luciano@gmail.com\",\"password\":\"caldeirao\",\"country\":\"Brasil\",\"role\":\"user\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "login admin copy",
+					"id": "280c38c7-c4d7-105e-1912-1b46a969d4b1",
+					"request": {
+						"url": "http://localhost:3001/user/",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Content-Type: application/json\nAuthorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg\n",
+						"data": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}",
+						"method": "GET",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}"
+		},
+		{
+			"id": "6e327151-27b1-cac5-7443-664e93833486",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/signin",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"data": [],
+			"dataMode": "raw",
+			"name": "login admin",
+			"description": "Rota de login para todos usuarios cadastrados",
+			"descriptionFormat": "html",
+			"time": 1633078777773,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": 188,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "221",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 08:57:39 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"dd-vncxxqBLaEgFF6Tpmq0LqY7qF2I\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3ODY1OSwiZXhwIjoxNjMzMTY1MDU5fQ.--npsc-eacZOGWsCL1FYXKVqtzbgfdSyxBoJ5ihkt4I\"",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Login com Administrador com sucesso",
+					"id": "93daaabf-1701-5850-614d-2f6e4b317365",
+					"isSample": true,
+					"scrollToResult": false,
+					"runTests": false,
+					"request": {
+						"url": "http://localhost:3001/signin",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": 72,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "221",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:15:27 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"dd-mFWyBP8FhpXLDtUJJuxN8LY9SHM\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\"",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Login admin",
+					"id": "1a4a388d-2f80-ff4b-4123-83818a7e1a61",
+					"isSample": true,
+					"scrollToResult": false,
+					"runTests": false,
+					"request": {
+						"url": "http://localhost:3001/signin",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "6e327151-27b1-cac5-7443-664e93833486",
+			"folder": "8f087355-76f5-d5ef-125d-6a6ed0d5d74d",
+			"rawModeData": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}"
+		},
+		{
+			"id": "715c11d8-054d-e224-1d45-b0f1b9555a48",
+			"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/movies/myfavorites/2",
+			"folder": "ec06e6e4-dbd4-b858-9ead-28464ad2373c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633082196165,
+			"name": "remover filme",
+			"description": "Admin pode editar filme ",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 153,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "82",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:37:19 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"52-XoRAE/gkIQx6V80dIQTmVm+3HxE\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"user_id\":4,\"movie_id\":1},{\"user_id\":4,\"movie_id\":2},{\"user_id\":4,\"movie_id\":3}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "adicionar filmes favoritos",
+					"id": "03f89d1b-51f9-3b33-5a53-87fcca02ecf9",
+					"request": "715c11d8-054d-e224-1d45-b0f1b9555a48",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/myfavorites/3",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 321,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "27",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:41:59 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"1b-c+63+ZqJc72DHh+6v1aqfDJukao\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"message\":\"Movie deleted\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "remover filmes favoritos",
+					"id": "ff043bb1-28ae-af84-6a4d-3aee9ba01c09",
+					"request": "715c11d8-054d-e224-1d45-b0f1b9555a48",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/myfavorites/2",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "",
+						"method": "DELETE",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 856,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "308",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:49:25 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"134-0Efyeg4JLPyGjFcezHkDvqB6ArM\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":8,\"title\":\"Liga da Justiça\",\"subtitle\":\"Spirits Within\",\"storyline\":\"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\"rating\":4,\"genre\":\"'fantasy'\",\"updatedAt\":\"2021-10-01T09:49:24.446Z\",\"createdAt\":\"2021-10-01T09:49:24.446Z\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "adicionar filme admin",
+					"id": "b10544aa-30fc-aa7c-bebb-030a39b109f3",
+					"request": "715c11d8-054d-e224-1d45-b0f1b9555a48",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\nContent-Type: application/json\n",
+						"data": "{\n      \"title\": \"Liga da Justiça\",\n      \"subtitle\": \"Spirits Within\",\n      \"storyline\": \"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\n      \"rating\": 4,\n      \"genre\": \"'fantasy'\"\n    }",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 404,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "303",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:52:47 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"12f-D/QBayrbahyAW0L3HdrrKvqtRug\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":3,\"title\":\"Monstros SA\",\"subtitle\":\"Spirits Within\",\"storyline\":\"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\"rating\":4,\"genre\":\"'fantasy'\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T09:52:47.000Z\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "editar filme",
+					"id": "beb45ddb-dd2d-1fa7-867a-8726a17e9e8e",
+					"request": "715c11d8-054d-e224-1d45-b0f1b9555a48",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/3",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\nContent-Type: application/json\n",
+						"data": "{\n      \"title\": \"Monstros SA\",\n      \"subtitle\": \"Spirits Within\",\n      \"storyline\": \"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\n      \"rating\": 4,\n      \"genre\": \"'fantasy'\"\n    }",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 53,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "27",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:55:06 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"1b-c+63+ZqJc72DHh+6v1aqfDJukao\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"message\":\"Movie deleted\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "remover filme",
+					"id": "c25e65b4-cb7a-0196-8fd5-3fb43103e337",
+					"request": {
+						"url": "http://localhost:3001/movies/myfavorites/2",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "",
+						"method": "DELETE",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": ""
+		},
+		{
+			"id": "98d4c40a-9df4-9881-47ef-497eb4f2fb21",
+			"headers": "Content-Type: application/json\nAuthorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/user/profile/2",
+			"folder": "770dca52-004a-03d5-ee23-32d883eafc4e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633083879466,
+			"name": "editar qualquer usuario",
+			"description": "admin pode editar qualquer usuario",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": 188,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "221",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 08:57:39 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"dd-vncxxqBLaEgFF6Tpmq0LqY7qF2I\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3ODY1OSwiZXhwIjoxNjMzMTY1MDU5fQ.--npsc-eacZOGWsCL1FYXKVqtzbgfdSyxBoJ5ihkt4I\"",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Login com Administrador com sucesso",
+					"id": "06da00b7-0d7b-d222-77ce-f9e86b7e26fc",
+					"isSample": true,
+					"scrollToResult": false,
+					"runTests": false,
+					"request": "98d4c40a-9df4-9881-47ef-497eb4f2fb21",
+					"requestObject": {
+						"url": "http://localhost:3001/signin",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": 72,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "221",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:15:27 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"dd-mFWyBP8FhpXLDtUJJuxN8LY9SHM\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\"",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Login admin",
+					"id": "71a07f77-51e2-cb1a-2a48-b84daed08ef1",
+					"isSample": true,
+					"scrollToResult": false,
+					"runTests": false,
+					"request": "98d4c40a-9df4-9881-47ef-497eb4f2fb21",
+					"requestObject": {
+						"url": "http://localhost:3001/signin",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 461,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "718",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 10:13:53 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"2ce-9GUjaBcTXNw8Mi4QlgH/b1+Fv3s\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"id\":1,\"fullName\":\"admin\",\"birthDate\":\"1980-06-15T09:34:21.000Z\",\"email\":\"admin@com.br\",\"password\":\"123456789\",\"country\":\"Brasil\",\"role\":\"admin\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":2,\"fullName\":\"Lewis Hamilton\",\"birthDate\":\"1980-06-15T09:34:21.000Z\",\"email\":\"lewishamilton@gmail.com\",\"password\":\"rubinhoamigo\",\"country\":\"Inglaterra\",\"role\":\"user\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":3,\"fullName\":\"Luciano Hulk\",\"birthDate\":\"1990-06-15T09:34:21.000Z\",\"email\":\"hulk.luciano@gmail.com\",\"password\":\"caldeirao\",\"country\":\"Brasil\",\"role\":\"user\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "login admin copy",
+					"id": "2bbb348d-e35f-6dab-f211-6d3e408f9d78",
+					"request": "98d4c40a-9df4-9881-47ef-497eb4f2fb21",
+					"requestObject": {
+						"url": "http://localhost:3001/user/",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Content-Type: application/json\nAuthorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg\n",
+						"data": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}",
+						"method": "GET",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 272,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "260",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 10:24:22 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"104-UC2XLItdLSKj9mWZbE8N3l7VH2Q\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"result\":{\"id\":2,\"fullName\":\"Girola Garcia\",\"birthDate\":\"1980-06-15T09:34:21.000Z\",\"email\":\"lewishamilton@gmail.com\",\"password\":\"rubinhoamigo\",\"country\":\"Inglaterra\",\"role\":\"user\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T10:24:21.000Z\"}}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "editar qualquer usuario",
+					"id": "8a5fa583-6455-3b29-9972-e226e10096a3",
+					"request": {
+						"url": "http://localhost:3001/user/profile/2",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Content-Type: application/json\nAuthorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg\n",
+						"data": "{\"fullName\":\"Girola Garcia\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}"
+		},
+		{
+			"id": "98e85c24-56ca-384a-eb38-c50e1fbaacf5",
+			"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/movies/myfavorites/",
+			"folder": "ec9d2b8a-e243-7ec1-4a05-abc34e5737b0",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633082444526,
+			"name": "listar seus favoritos",
+			"description": "User pode adicionar filme aos favoritos",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 153,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "82",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:37:19 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"52-XoRAE/gkIQx6V80dIQTmVm+3HxE\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"user_id\":4,\"movie_id\":1},{\"user_id\":4,\"movie_id\":2},{\"user_id\":4,\"movie_id\":3}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "adicionar filmes favoritos",
+					"id": "7355a9a1-c9d3-450f-f8e9-6646fa98fc42",
+					"request": "98e85c24-56ca-384a-eb38-c50e1fbaacf5",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/myfavorites/3",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 233,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "55",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 10:00:26 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"37-SyHEjRdqDWiZZ7xf7eLRs9scADo\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"user_id\":4,\"movie_id\":1},{\"user_id\":4,\"movie_id\":3}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "listar seus favoritos",
+					"id": "c93bf52d-4e30-9db1-8313-47d95a2f782e",
+					"request": {
+						"url": "http://localhost:3001/movies/myfavorites/",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "9ff0f641-6e72-efe1-96a0-07eedc6ee749",
+			"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/user/myprofile",
+			"folder": "c3c17f07-d73c-12c1-7659-7527d2b66ff6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633082916721,
+			"name": "editar usuario ",
+			"description": "Editar usuario",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 283,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "736",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:25:44 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"2e0-JLXzF27tkKDL6Fl9WO0s7nffnIk\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"id\":1,\"title\":\"Titanic\",\"subtitle\":\"Titanic\",\"storyline\":\"sheep =)\",\"rating\":10,\"genre\":\"genre1\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":2,\"title\":\"Volta dos que...\",\"subtitle\":\"volta dos q\",\"storyline\":\"turn\",\"rating\":10,\"genre\":\"genre2\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":3,\"title\":\"Agua Molhada\",\"subtitle\":\"chuva no gelo\",\"storyline\":\"water and ice\",\"rating\":8,\"genre\":\"genre3\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":6,\"title\":\"TQTQTQ\",\"subtitle\":\"Titanic\",\"storyline\":\"sheep =)\",\"rating\":10,\"genre\":\"genre2\",\"createdAt\":\"2021-10-01T06:31:09.000Z\",\"updatedAt\":\"2021-10-01T06:31:09.000Z\"}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "listar filmes user",
+					"id": "9c83f7d1-168f-a859-83e7-7c6d1e6092f5",
+					"request": "9ff0f641-6e72-efe1-96a0-07eedc6ee749",
+					"requestObject": {
+						"url": "http://localhost:3001/movies",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 572,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "125",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 10:06:43 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"7d-zHvmMxI6td4ljlvo/4VX9o62B0I\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":4,\"fullName\":\"Pedro Barros\",\"birthDate\":\"1995-06-15T09:34:21.000Z\",\"email\":\"pedro.barros@gmail.com\",\"password\":\"skate\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "listar usuario",
+					"id": "1ed3bd6b-13f7-1962-1458-cfd60cc1ade8",
+					"request": "9ff0f641-6e72-efe1-96a0-07eedc6ee749",
+					"requestObject": {
+						"url": "http://localhost:3001/user/myprofile",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 352,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "146",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 10:08:25 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"92-uy2GcjB4hMDEQJz3atrJVXB3QlU\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"result\":{\"id\":4,\"fullName\":\"Pedro Barros do brasil\",\"birthDate\":\"1995-06-15T09:34:21.000Z\",\"email\":\"pedro.barros@gmail.com\",\"password\":\"skate\"}}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "editar usuario ",
+					"id": "26a5a970-e24c-c205-3953-689eddee2c4c",
+					"request": {
+						"url": "http://localhost:3001/user/myprofile",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"enabled": true,
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "{\n\t\"fullName\":\"Pedro Barros do brasil\",\n\t\"Country\":\"Bolivia\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				}
+			]
+		},
+		{
+			"id": "ad16b588-60ba-83f0-75e7-e5df1fe8d986",
+			"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/movies/",
+			"folder": "ec9d2b8a-e243-7ec1-4a05-abc34e5737b0",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633082178894,
+			"name": "adicionar filme",
+			"description": "Admin pode adicionar filme novos filmes",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 153,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "82",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:37:19 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"52-XoRAE/gkIQx6V80dIQTmVm+3HxE\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"user_id\":4,\"movie_id\":1},{\"user_id\":4,\"movie_id\":2},{\"user_id\":4,\"movie_id\":3}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "adicionar filmes favoritos",
+					"id": "d9de52d1-5fa3-1b65-2fa0-aadd2d799df8",
+					"request": "ad16b588-60ba-83f0-75e7-e5df1fe8d986",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/myfavorites/3",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 321,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "27",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:41:59 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"1b-c+63+ZqJc72DHh+6v1aqfDJukao\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"message\":\"Movie deleted\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "remover filmes favoritos",
+					"id": "26462db6-195a-7d59-d0a4-63a2e059f901",
+					"request": "ad16b588-60ba-83f0-75e7-e5df1fe8d986",
+					"requestObject": {
+						"url": "http://localhost:3001/movies/myfavorites/2",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "",
+						"method": "DELETE",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 856,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "308",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:49:25 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"134-0Efyeg4JLPyGjFcezHkDvqB6ArM\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":8,\"title\":\"Liga da Justiça\",\"subtitle\":\"Spirits Within\",\"storyline\":\"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\"rating\":4,\"genre\":\"'fantasy'\",\"updatedAt\":\"2021-10-01T09:49:24.446Z\",\"createdAt\":\"2021-10-01T09:49:24.446Z\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "adicionar filme admin",
+					"id": "47d1479c-2850-27f5-462d-2af8a8ca85ab",
+					"request": {
+						"url": "http://localhost:3001/movies/",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\nContent-Type: application/json\n",
+						"data": "{\n      \"title\": \"Liga da Justiça\",\n      \"subtitle\": \"Spirits Within\",\n      \"storyline\": \"A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.\",\n      \"rating\": 4,\n      \"genre\": \"'fantasy'\"\n    }",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": ""
+		},
+		{
+			"id": "cafe3028-97cc-b8f9-6e55-b9e685dce9ce",
+			"headers": "Content-Type: application/json\nAuthorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/user/profile/3",
+			"folder": "770dca52-004a-03d5-ee23-32d883eafc4e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633083510916,
+			"name": "deletar qualquer usuario",
+			"description": "admin pode listar todos usuarios",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": 188,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "221",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 08:57:39 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"dd-vncxxqBLaEgFF6Tpmq0LqY7qF2I\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3ODY1OSwiZXhwIjoxNjMzMTY1MDU5fQ.--npsc-eacZOGWsCL1FYXKVqtzbgfdSyxBoJ5ihkt4I\"",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Login com Administrador com sucesso",
+					"id": "1f356a32-92e5-76d5-ed69-09e014f866e0",
+					"isSample": true,
+					"scrollToResult": false,
+					"runTests": false,
+					"request": "cafe3028-97cc-b8f9-6e55-b9e685dce9ce",
+					"requestObject": {
+						"url": "http://localhost:3001/signin",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": 72,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "221",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:15:27 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"dd-mFWyBP8FhpXLDtUJJuxN8LY9SHM\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA3OTcyNywiZXhwIjoxNjMzMTY2MTI3fQ.QchTS3cH1lF4FaWjmFcjfK_2alWlglAhBPeTnldi2Bk\"",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Login admin",
+					"id": "ba7d32b3-2a02-c7ff-2cfc-a13542d697f9",
+					"isSample": true,
+					"scrollToResult": false,
+					"runTests": false,
+					"request": "cafe3028-97cc-b8f9-6e55-b9e685dce9ce",
+					"requestObject": {
+						"url": "http://localhost:3001/signin",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 461,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "718",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 10:13:53 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"2ce-9GUjaBcTXNw8Mi4QlgH/b1+Fv3s\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"id\":1,\"fullName\":\"admin\",\"birthDate\":\"1980-06-15T09:34:21.000Z\",\"email\":\"admin@com.br\",\"password\":\"123456789\",\"country\":\"Brasil\",\"role\":\"admin\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":2,\"fullName\":\"Lewis Hamilton\",\"birthDate\":\"1980-06-15T09:34:21.000Z\",\"email\":\"lewishamilton@gmail.com\",\"password\":\"rubinhoamigo\",\"country\":\"Inglaterra\",\"role\":\"user\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":3,\"fullName\":\"Luciano Hulk\",\"birthDate\":\"1990-06-15T09:34:21.000Z\",\"email\":\"hulk.luciano@gmail.com\",\"password\":\"caldeirao\",\"country\":\"Brasil\",\"role\":\"user\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "login admin copy",
+					"id": "757cc159-ed82-c564-fe61-d9549ba85ce4",
+					"request": "cafe3028-97cc-b8f9-6e55-b9e685dce9ce",
+					"requestObject": {
+						"url": "http://localhost:3001/user/",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Content-Type: application/json\nAuthorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg\n",
+						"data": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}",
+						"method": "GET",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 1039,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "21",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 10:18:15 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"15-05sALxLwT1ik9/qZK2sYw2X1co4\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"message\":\"Deleted\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "deletar qualquer usuario",
+					"id": "e39fbc70-a708-bd20-cba2-a33afd8a4d56",
+					"request": {
+						"url": "http://localhost:3001/user/profile/3",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Content-Type: application/json\nAuthorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvbS5iciIsInBhc3N3b3JkIjoiMTIzNDU2Nzg5Iiwicm9sZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTYzMzA4MzE1MywiZXhwIjoxNjMzMTY5NTUzfQ.H5Q5qpH-_OAi03Vgp8ENz0hSVEAHvcjqCkvnrjs-sgg\n",
+						"data": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}",
+						"method": "DELETE",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": "{\"email\":\"admin@com.br\",\n\t\"password\":\"123456789\"\n}"
+		},
+		{
+			"id": "dd499c93-5b13-c72a-633b-739211f1cee4",
+			"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/user/myprofile",
+			"folder": "c05165c9-8f91-3cf6-a9ea-0d7f40ef238a",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633082814041,
+			"name": "listar usuario",
+			"description": "listar usuarios",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 283,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "736",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:25:44 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"2e0-JLXzF27tkKDL6Fl9WO0s7nffnIk\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"id\":1,\"title\":\"Titanic\",\"subtitle\":\"Titanic\",\"storyline\":\"sheep =)\",\"rating\":10,\"genre\":\"genre1\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":2,\"title\":\"Volta dos que...\",\"subtitle\":\"volta dos q\",\"storyline\":\"turn\",\"rating\":10,\"genre\":\"genre2\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":3,\"title\":\"Agua Molhada\",\"subtitle\":\"chuva no gelo\",\"storyline\":\"water and ice\",\"rating\":8,\"genre\":\"genre3\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":6,\"title\":\"TQTQTQ\",\"subtitle\":\"Titanic\",\"storyline\":\"sheep =)\",\"rating\":10,\"genre\":\"genre2\",\"createdAt\":\"2021-10-01T06:31:09.000Z\",\"updatedAt\":\"2021-10-01T06:31:09.000Z\"}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "listar filmes user",
+					"id": "adffc64e-f6f9-746c-f5a8-2bd11230568c",
+					"request": "dd499c93-5b13-c72a-633b-739211f1cee4",
+					"requestObject": {
+						"url": "http://localhost:3001/movies",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 572,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "125",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 10:06:43 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"7d-zHvmMxI6td4ljlvo/4VX9o62B0I\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":4,\"fullName\":\"Pedro Barros\",\"birthDate\":\"1995-06-15T09:34:21.000Z\",\"email\":\"pedro.barros@gmail.com\",\"password\":\"skate\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "listar usuario",
+					"id": "ba2925f4-f31d-513c-c53a-d314ad06b480",
+					"request": {
+						"url": "http://localhost:3001/user/myprofile",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "ff4d46ba-21ef-d073-e76e-507f184c2c55",
+			"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/user/myprofile",
+			"folder": "c3c17f07-d73c-12c1-7659-7527d2b66ff6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1633082974781,
+			"name": "deletar usuario",
+			"description": "deletar usuario",
+			"collectionId": "e4e9a5e3-359e-65e7-1eb4-1db43aa46f9d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 283,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "736",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 09:25:44 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"2e0-JLXzF27tkKDL6Fl9WO0s7nffnIk\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"id\":1,\"title\":\"Titanic\",\"subtitle\":\"Titanic\",\"storyline\":\"sheep =)\",\"rating\":10,\"genre\":\"genre1\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":2,\"title\":\"Volta dos que...\",\"subtitle\":\"volta dos q\",\"storyline\":\"turn\",\"rating\":10,\"genre\":\"genre2\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":3,\"title\":\"Agua Molhada\",\"subtitle\":\"chuva no gelo\",\"storyline\":\"water and ice\",\"rating\":8,\"genre\":\"genre3\",\"createdAt\":\"2021-10-01T05:31:48.000Z\",\"updatedAt\":\"2021-10-01T05:31:48.000Z\"},{\"id\":6,\"title\":\"TQTQTQ\",\"subtitle\":\"Titanic\",\"storyline\":\"sheep =)\",\"rating\":10,\"genre\":\"genre2\",\"createdAt\":\"2021-10-01T06:31:09.000Z\",\"updatedAt\":\"2021-10-01T06:31:09.000Z\"}]",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "listar filmes user",
+					"id": "ee984242-51f4-31a2-819f-29115218a00d",
+					"request": "ff4d46ba-21ef-d073-e76e-507f184c2c55",
+					"requestObject": {
+						"url": "http://localhost:3001/movies",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 572,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "125",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 10:06:43 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"7d-zHvmMxI6td4ljlvo/4VX9o62B0I\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":4,\"fullName\":\"Pedro Barros\",\"birthDate\":\"1995-06-15T09:34:21.000Z\",\"email\":\"pedro.barros@gmail.com\",\"password\":\"skate\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "listar usuario",
+					"id": "106b5067-f072-cffb-ae12-0fa9a2f48522",
+					"request": "ff4d46ba-21ef-d073-e76e-507f184c2c55",
+					"requestObject": {
+						"url": "http://localhost:3001/user/myprofile",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 352,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "146",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 10:08:25 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"92-uy2GcjB4hMDEQJz3atrJVXB3QlU\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"result\":{\"id\":4,\"fullName\":\"Pedro Barros do brasil\",\"birthDate\":\"1995-06-15T09:34:21.000Z\",\"email\":\"pedro.barros@gmail.com\",\"password\":\"skate\"}}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "editar usuario ",
+					"id": "546a379a-c630-af7e-0cbc-fcaede4b8f3d",
+					"request": "ff4d46ba-21ef-d073-e76e-507f184c2c55",
+					"requestObject": {
+						"url": "http://localhost:3001/user/myprofile",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"enabled": true,
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": "{\n\t\"fullName\":\"Pedro Barros do brasil\",\n\t\"Country\":\"Bolivia\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 332,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "21",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 01 Oct 2021 10:09:08 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"15-05sALxLwT1ik9/qZK2sYw2X1co4\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"message\":\"Deleted\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "deletar usuario",
+					"id": "2f185bd7-afd8-9991-3ec8-62d0bcfa9204",
+					"request": {
+						"url": "http://localhost:3001/user/myprofile",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k",
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlZHJvLmJhcnJvc0BnbWFpbC5jb20iLCJwYXNzd29yZCI6InNrYXRlIiwicm9sZSI6InVzZXIiLCJpZCI6NCwiaWF0IjoxNjMzMDc5NzY1LCJleHAiOjE2MzMxNjYxNjV9.U7lYOT-3NB8AP8vR0gYXF9JPysFh3dM5IrmWJrT5b2k\nContent-Type: application/json\n",
+						"data": null,
+						"method": "DELETE",
+						"dataMode": "params"
+					}
+				}
+			]
+		}
+	]
+}
