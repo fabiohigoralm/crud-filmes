@@ -1,4 +1,4 @@
-const error = async (err, req, res, _next) => {
+const error = async (err, req, res) => {
   if (err.isJoi) {
     return res.status(400).json({
       message: err.details[0].message,
